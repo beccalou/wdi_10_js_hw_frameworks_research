@@ -1,0 +1,38 @@
+Both Angular.js and Backbone.js provide developers a Model-View-Controller
+structure for JavaScript code, allowing for clearer, semantically meaningful
+JavaScript.
+
+Key differences:
+
+1. Library vs. Framework: Backbone.js is not a complete framework-- it offers
+the basic form and construct for the application, but leaves the choices
+around the "application design, architecture and scalability to the developer,
+including memory management, and view management." The developer may choose to
+write the code for these reqirements herself, or use one of the many
+Backbone.js libraries created for this purpose (like Marionette, Chaplin, or
+Knockback).  Angular.js on the other hand is a complete framework that does
+not require additional libraries.
+
+2. Hard dependencies: In addition to requiring a library to augment its
+structure, Backbone has a "hard dependency" on Underscore, a library that
+provides 80+ programming helpers. Angular.js does not have hard dependencies,
+it can work on its own.
+
+3. Data-binding:  Backbone does not offer data-binding: the logic for each
+view-model connection has to be written or a Backbone plugin must be used.
+
+4.  Templating:  Underscore, Backbone's dependency, offers a template; however
+the Backbone community seems to prefer to select a custom template like
+Handlebars, Mustache, or Dust. Angular uses HTML so no additional template is
+necessary.
+
+Backbone.js has two popular gems to assist in creating its rails
+scaffold and generators: gem backbone-on-rails 1.1.1.0 and gem rails-
+backbone. Backbone was originally extracted from a rails application so, with
+a couple of exceptions, it sounds simple to integrate.
+
+Several notable applications have been built with Backbone.js, including:
+
+    http://www.usatoday.com/ http://www.hulu.com/ http://kinja.com/
+    http://wordpress.com/ https://foursquare.com https://www.khanacademy.org/
+    https://delicious.com/
